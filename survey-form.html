@@ -8,7 +8,7 @@
 
   <body>
     <header>
-      <h1 id="title">food form</h1>
+      <h1 id="title">Personal Survey Form</h1>
       <p id="description">fill the form</p>
     </header>
     <form id="survey-form" required value="information">
@@ -23,13 +23,21 @@
       <label id="number-label"
         >Age:
         <input
-          required
+          
           id="number"
           type="number"
           min="18"
-          max="30"
+          max="99"
+          required
           placeholder="age"
       /></label>
+      
+      </label>
+      <p>Indicate your gender</p>
+      <label><input id="" type="radio" name="gender" value="female"/>Female</label>
+      <label><input id="" type="radio" name="gender" value="male"/>Male</label>
+      <label><input id="" type="radio" name="gender" value="other"/>Other</label>
+      
       <label
         >What is your favourite ice cream?
         <select id="dropdown">
@@ -42,11 +50,26 @@
 
           <option>Vanilla ice cream</option>
         </select>
-      </label>
-      <p>What is your favorite food?:</p>
-      <br />
-      <textarea></textarea>
-      <label><input id="" type="radio" name="" />mmm </label>
+        <label>
+          <p>What is your favorite season of the year?</p>
+          <input type="checkbox" name="season" value="winter" required>
+          Winter
+        </label>
+        <label>
+          <input type="checkbox" name="season" value="autumn">
+          Autumn
+        </label>
+        <label>
+          <input type="checkbox" name="season" value="spring">
+          Spring
+        </label>
+        <label>
+          <input type="checkbox" name="season" value="summer">
+          Summer
+        </label>
+        <p>What is your favorite food?:</p>
+      <textarea placeholder="hamburguer..."></textarea>
     </form>
+    <button type="button" value="submit">Submit</button>
   </body>
 </html>
